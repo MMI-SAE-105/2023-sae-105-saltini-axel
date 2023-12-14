@@ -48,33 +48,47 @@
                             <div id="ecran-1" class="carrousel_ecran">
                                 <figure>
                                     <img src="public/img/accueil1.webp" alt="image ecran 1">
-                                    <figcaption>Ecran 1</figcaption>
+                                    <figcaption>Expostion 2022</figcaption>
                                 </figure>
                             </div>
                             <div id="ecran-2" class="carrousel_ecran">
                                 <figure>
                                     <img src="public/img/accueil1.webp" alt="image ecran 2">
-                                    <figcaption>Ecran 2</figcaption>
+                                    <figcaption>Expostion 2022</figcaption>
                                 </figure>
                             </div>
                             <div id="ecran-3" class="carrousel_ecran">
                                 <figure>
                                     <img src="public/img/accueil1.webp" alt="image ecran 3">
-                                    <figcaption>Ecran 3</figcaption>
+                                    <figcaption>Expostion 2022</figcaption>
                                 </figure>
                             </div>
                             <div id="ecran-4" class="carrousel_ecran">
                                 <figure>
                                     <img src="public/img/accueil1.webp" alt="image ecran 4">
-                                    <figcaption>Ecran 4</figcaption>
+                                    <figcaption>Expostion 2022</figcaption>
                                 </figure>
                             </div>
                             <div id="ecran-5" class="carrousel_ecran">
                                 <figure>
                                     <img src="public/img/accueil1.webp" alt="image ecran 5">
-                                    <figcaption>Ecran 5</figcaption>
+                                    <figcaption>Expostion 2022</figcaption>
                                 </figure>
                             </div>
+                        </div>
+                        </div>
+                        <ul class="carrousel_liste-liens">
+                            <li><a href="#ecran-1" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-1'}"
+                                    @click="hrefCourant = '#ecran-1'">Cartier</a></li>
+                            <li><a href="#ecran-2" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-2'}"
+                                    @click="hrefCourant = '#ecran-2'">Exposition</a></li>
+                            <li><a href="#ecran-3" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-3'}"
+                                    @click="hrefCourant = '#ecran-3'">Lieu</a></li>
+                            <li><a href="#ecran-4" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-4'}"
+                                    @click="hrefCourant = '#ecran-4'">Centre</a></li>
+                            <li><a href="#ecran-5" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-5'}"
+                                    @click="hrefCourant = '#ecran-5'">Musée</a></li>
+                        </ul>
                         </div>
                     <p>
                         Cartier revient une fois de plus cette année pour une toute nouvelle exposition. Découvrez ci-contre l’artiste choisit !
