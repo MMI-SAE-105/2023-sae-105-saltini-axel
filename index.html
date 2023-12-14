@@ -15,40 +15,73 @@
 </head>
 
 <body>
-    <header>
-        <section>
-            <h2>AAE</h2>
-            <a>
-                <a href="index.html"><img src="public/icones/logo site.svg" alt="Logo AAE" /></a>
-                <a aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"><img
-                        src="public/icones/hamburger.svg" alt="Menu hamburger" /></a>
-                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-                    <ul>
-                        <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
-                        <h4>L'EXPOSITION</h4>
-                        <li><a href="galerie.html">Galerie des oeuvres</a></li>
-                        <li><a href="https://ticketmaster.com">Billeterie</a></li>
-                        <li><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
-                        <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
-                        <h4>CONTACT</h4>
-                        <li><a href="contact.html">Nous contacter</a></li>
-                        <p>© 2023 - Axel Saltini</p>
-                    </ul>
-                </nav>
-            </a>
-        </section>
+    <header class="header">
+        <h2 class="header__title">AAE</h2>
+        <a>
+            <a href="index.html"><img src="public/icones/logo site.svg" alt="Logo AAE" /></a>
+            <a aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"><img
+                    src="public/icones/hamburger.svg" alt="Menu hamburger" /></a>
+            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                <ul>
+                    <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                    <h4>L'EXPOSITION</h4>
+                    <li><a href="galerie.html">Galerie des oeuvres</a></li>
+                    <li><a href="https://ticketmaster.com">Billeterie</a></li>
+                    <li><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
+                    <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                    <h4>CONTACT</h4>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                    <p>© 2023 - Axel Saltini</p>
+                </ul>
+            </nav>
+        </a>
     </header>
     <main>
-        <section>
-            <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
-            <h4>CARTIER présente</h4>
-            
-            <h1>Architect Art Exposition</h1>
-            <p>
-                Cartier revient une fois de plus cette année pour une toute nouvelle exposition. Découvrez ci-contre
-                l’artiste choisit !
-            </p>
-        </section>
+        <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+        <h4>CARTIER présente</h4>
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}"  x-show="!menuIsOpen" x-transition.duration.800ms>
+            <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
+                @click="parent = $refs.parent; parent.scrollLeft -= parent.clientWidth">←</button>
+            <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
+                @click="parent = $refs.parent; parent.scrollLeft += parent.clientWidth">→</button>
+            <div class="carrousel_parent-ecrans" x-ref="parent">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="public/img/accueil1.webp" alt="image ecran 1">
+                        <figcaption>Expostion 2022</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img src="public/img/accueil1.webp" alt="image ecran 2">
+                        <figcaption>Expostion 2022</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img src="public/img/accueil1.webp" alt="image ecran 3">
+                        <figcaption>Expostion 2022</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-4" class="carrousel_ecran">
+                    <figure>
+                        <img src="public/img/accueil1.webp" alt="image ecran 4">
+                        <figcaption>Expostion 2022</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-5" class="carrousel_ecran">
+                    <figure>
+                        <img src="public/img/accueil1.webp" alt="image ecran 5">
+                        <figcaption>Expostion 2022</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <h1>Architect Art Exposition</h1>
+        <p>
+            Cartier revient une fois de plus cette année pour une toute nouvelle exposition. Découvrez ci-contre
+            l’artiste choisit !
+        </p>
 
         <section>
             <div>

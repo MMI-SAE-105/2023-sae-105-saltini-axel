@@ -18,3 +18,18 @@
 .noscroll body {
     overflow: hidden;
 }
+
+.header {
+    background: var(--mainblue, #172446);
+}
+
+.header__title {
+    color: var(--blanc-criture, #FFF);
+        font-family: var(--font-amiko, "Amiko")
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 30px;
+        margin-top: 0;
+}
