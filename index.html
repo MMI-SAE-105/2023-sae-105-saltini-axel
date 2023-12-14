@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="icon" href="public/icones/logo site.svg" />
     <script src="//unpkg.com/alpinejs" defer></script>
-    
+
 </head>
 
 <body>
@@ -22,22 +22,19 @@
                 <a href="index.html">
                     <img src="public/icones/logo site.svg" alt="Logo AAE" />
                 </a>
-                <img src="public/icones/hamburger.svg" alt="Menu hamburger" />
+                <a aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"><img
+                        src="public/icones/hamburger.svg" alt="Menu hamburger" /></a>
+                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                    <ul>
+                        <li><a href="galerie.html">Galerie des oeuvres</a></li>
+                        <li><a href="https://ticketmaster.com">Billeterie</a></li>
+                        <li><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </nav>
             </a>
         </section>
-        <section>
-            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">menu</button>
-            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-                <ul>
-                    <li><a href="galerie.html">Galerie des oeuvres</a></li>
-                    <li><a href="https://ticketmaster.com">Billeterie</a></li>
-                    <li><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
-                    <li><a href="contact.html">Nous contacter</a></li>
-                </ul>
-            </nav>
-        </section>
     </header>
-
     <main>
         <section>
             <h1>Architect Art Exposition</h1>
