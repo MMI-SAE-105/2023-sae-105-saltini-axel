@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Architect Art Exposition</title>
+
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="icon" href="public/icones/logo site.svg" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <section>
+            <h2>AAE</h2>
+            <a>
+                <a href="index.html">
+                    <img src="public/icones/logo site.svg" alt="Logo AAE" />
+                </a>
+                <a aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"><img
+                        src="public/icones/hamburger.svg" alt="Menu hamburger" /></a>
+                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                    <ul>
+                        <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                        <h4>L'EXPOSITION</h4>
+                        <li><a href="galerie.html">Galerie des oeuvres</a></li>
+                        <li><a href="https://ticketmaster.com">Billeterie</a></li>
+                        <li><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
+                        <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                        <h4>CONTACT</h4>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                        <p>© 2023 - Axel Saltini</p>
+                    </ul>
+                </nav>
+            </a>
+        </section>
+    </header>
+    <main>
+        <section>
+            <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+            <h4>RENZO PIANO, ARCHITECTE DE GÉNIE</h4>
+            <p>
+                Renzo Piano, architecte italien de renommée mondiale, est reconnu pour sa vision avant-gardiste et sa
+                contribution
+                majeure à l'architecture contemporaine.
+            </p>
+            <p>Découvrez ci-dessous son parcours artistique et son influence dans le monde.</p>
+            <img src="public/img/renzobio.webp" alt="renzobio" />
+        </section>
+        <section>
+            <div>
+                <h1>PARCOURS</h1>
+                <p>Renzo Piano est né dans une famille d'architectes en Italie. Après des études à l'École polytechnique
+                    de Milan, il a
+                    acquis une solide base en architecture et a travaillé aux côtés d'architectes influents,
+                    enrichissant ainsi son
+                    expérience.</p>
+
+                <p>Piano est reconnu pour son approche humaniste de l'architecture, mettant l'accent sur la
+                    fonctionnalité, la durabilité
+                    et l'interaction harmonieuse avec l'environnement. Des œuvres emblématiques telles que le Centre
+                    Georges Pompidou à
+                    Paris, caractérisé par son concept novateur d'exposer les éléments structurels à l'extérieur du
+                    bâtiment, illustrent son
+                    impact dans le monde de l'architecture.</p>
+
+                <p>L'héritage de Piano comprend également des projets axés sur la durabilité, tels que The Shard à
+                    Londres et le siège de
+                    la California Academy of Sciences à San Francisco. Ces réalisations intègrent des caractéristiques
+                    écologiques avancées,
+                    reflétant son engagement envers des pratiques architecturales respectueuses de l'environnement.</p>
+
+                <img src="public/img/renzobio2.webp" alt="renzobio2" />
+            </div>
+            <div>
+                <h1>INFLUENCE</h1>
+                <p>Renzo Piano a eu une influence significative dans le monde de l'architecture à plusieurs niveaux:
+                </p>
+
+                <p>Sa vision avant-gardiste et ses conceptions novatrices ont redéfini les normes architecturales.
+                    L'exposition des
+                    éléments structurels à l'extérieur du Centre Georges Pompidou en est un exemple marquant, démontrant
+                    sa volonté de
+                    repousser les limites traditionnelles de l'architecture.
+                </p>
+
+                <p>Ses œuvres iconiques, telles que The Shard à Londres, ont transformé les paysages urbains mondiaux,
+                    apportant une
+                    esthétique distinctive et influençant les silhouettes des villes.
+                </p>
+                <p>L'accent mis par Piano sur la durabilité et les pratiques respectueuses de l'environnement a
+                    également eu un impact sur
+                    la manière dont l'architecture contemporaine intègre des éléments écologiques. Ses bâtiments
+                    intègrent souvent des
+                    caractéristiques écologiques avancées.
+
+                </p>
+                <p>En créant des espaces comme des musées et des centres culturels, tels que le Centre Georges Pompidou
+                    ou la Fondation
+                    Beyeler, Piano a contribué à façonner des lieux où l'art, la culture et l'architecture se
+                    rencontrent pour inspirer et
+                    éduquer.
+                </p>
+            </div>
+        </section>
+        <section>
+
+        </section>
+        <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+        <h4>DÉCOUVRIR</h4>
+        <p>Si l’article vous a plu, n’hésitez pas à visiter la galerie des œuvres de l’artiste !</p>
+        <a href="galerie.html">GALERIE DES OEUVRES</a>
+    </main>
+
+    <footer>
+        <section>
+            <div>
+                <h4>Mentions légales</h4>
+                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard.</p>
+                <h4>Contact</h4>
+                <p>Fondation Cartier
+                    261 Bd Raspail
+                    75014 Paris</p>
+                <p>
+                    © 2023 - Axel Saltini
+                </p>
+            </div>
+        </section>
+    </footer>
