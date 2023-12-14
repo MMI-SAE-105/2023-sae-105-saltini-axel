@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Architect Art Exposition</title>
+
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="icon" href="public/icones/logo site.svg" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <section>
+            <h2>AAE</h2>
+            <a href="index.html"><img src="public/icones/logo site.svg" alt="Logo AAE" /></a>
+            <a aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"><img
+                    src="public/icones/hamburger.svg" alt="Menu hamburger" /></a>
+            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                <ul>
+                    <li><a href="galerie.html">Galerie des oeuvres</a></li>
+                    <li><a href="https://ticketmaster.com">Billeterie</a></li>
+                    <li><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+            </a>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div>
+                <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                <h4>NOUS CONTACTER</h4>
+                <p>
+                    Ici, vous pouvez nous envoyer vos questions sur l’Architect Art Exposition, nous ferons de notre
+                    mieux pour vous
+                    répondre rapidement.
+                    Veuillez remplir le formulaire ci-dessous.
+                </p>
+            </div>
+        </section>
+        <section>
+            <form>
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" id="nom" />
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email" />
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <div>
+                    <a href="index.html"><button type="submit">Envoyer</button></a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div>
+                <h4>Mentions légales</h4>
+                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard.</p>
+                <h4>Contact</h4>
+                <p>Fondation Cartier
+                    261 Bd Raspail
+                    75014 Paris</p>
+                <p>
+                    © 2023 - Axel Saltini
+                </p>
+            </div>
+        </section>
+    </footer>
