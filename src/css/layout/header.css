@@ -12,6 +12,9 @@
 .header__menuhamburger {
     position: relative;
     z-index: 10;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
 }
 
 .noscroll,
@@ -20,19 +23,39 @@
 }
 
 .header {
+    position: relative;
     background: var(--mainblue, #172446);
 }
 
 .header__title {
     color: var(--blanc-criture, #FFF);
-        font-family: var(--font-amiko, "Amiko")
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin: 30px;
-        margin-top: 0;
+    font-family: var(--font-amiko, "Amiko") font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    bottom: 10px;
+    left: 10px;
 }
+
 .header__logosite {
     box-sizing: border-box
+}
+
+.header__logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--blanc-criture, #FFF);
+    font-family: var(--font-amiko, "Amiko");
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5px;
+}
+
+.header__logo h2 {
+    margin: 0;
+    align-self: center;
 }
