@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Architect Art Exposition</title>
+
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="icon" href="public/icones/logo site.svg" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <section>
+            <h2>AAE</h2>
+                <a href="index.html">
+                    <img src="public/icones/logo site.svg" alt="Logo AAE" />
+                </a>
+
+                <a aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"><img
+                        src="public/icones/hamburger.svg" alt="Menu hamburger" /></a>
+                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                    <ul>
+                        <li><a href="galerie.html">Galerie des oeuvres</a></li>
+                        <li><a href="https://ticketmaster.com">Billeterie</a></li>
+                        <li><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </nav>
+            </a>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div>
+                <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                <h4>GALERIE DES OEUVRES</h4>
+                <p>
+                    Renzo Piano a créé de nombreuses œuvres impressionnantes. Découvrez en exclusivité celles qui seront
+                    présentées lors de
+                    l’exposition à travers cette frise !
+                </p>
+                <div>
+        </section>
+        <section>
+            <div>
+                <h1>L'histoire des plus grandes oeuvres de Piano</h1>
+            </div>
+            <div>
+                <h3>1971</h3>
+                <p> Le Centre Georges Pompidou, situé à Paris, est un monument architectural unique abrite une riche
+                    collection d'œuvres
+                    d'art. </p>
+                    <a href="pompidou.html">
+                <img src="public/img/frise1.webp" alt="frise1" />
+                <a>
+                    <h3>Centre Georges Pompidou</h3>
+                <h3>1982</h3>
+                <p> La Fondation Beyeler est un véritable joyau artistique, un musée offrant une expérience intime avec
+                    l'art moderne. </p>
+                <img src="public/img/frise2.webp" alt="frise2" />
+                <h3>2009</h3>
+                <p> The Shard, situé à Londres, est une icône architecturale majestueuse ainsi que le plus haut
+                    gratte-ciel d'Europe.
+                </p>
+                <img src="public/img/frise3.webp" alt="frise3" />
+                <h3>2009</h3>
+                <p> Le Pavillon de Photographie La Coste est un refuge artistique dédié à l'exploration de la
+                    photographie contemporaine.
+                </p>
+                <img src="public/img/frise4.webp" alt="frise4" />
+                <h3>2010</h3>
+                <p> Le Resnick Pavilion du Los Angeles County Museum of Art est une galerie moderne dédiée à des
+                    expositions et collections.
+                </p>
+                <img src="public/img/frise5.webp" alt="frise5" />
+                <h3>2014</h3>
+                <p> Le Centre d'Art Centro Botín offre des expositions innovantes et des événements culturels en bord de
+                    mer.
+                </p>
+                <img src="public/img/frise6.webp" alt="frise6" />
+                <h3>2015</h3>
+                <p> Le Whitney Museum of American Art est un musée iconique de New York, avec un cadre architectural
+                    saisissant.
+                </p>
+                <img src="public/img/frise7.webp" alt="frise7" />
+                <h3>2020</h3>
+                <p> Le Pont San Giorgio est une magnifique passerelle située à Venise, offrant une vue spectaculaire sur
+                    ses canaux.
+                </p>
+                <img src="public/img/frise8.webp" alt="frise8" />
+            </div>
+            </div>
+        </section>
