@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8" />
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="icon" href="public/icones/logo site.svg" />
     <script src="//unpkg.com/alpinejs" defer></script>
+    
 </head>
 
 <body>
@@ -18,12 +19,15 @@
         <section>
             <h2>AAE</h2>
             <a>
-                <img src="public/icones/logo site.svg" alt="Logo AAE" />
+                <a href="index.html">
+                    <img src="public/icones/logo site.svg" alt="Logo AAE" />
+                </a>
                 <img src="public/icones/hamburger.svg" alt="Menu hamburger" />
             </a>
         </section>
         <section>
-            <nav>
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">menu</button>
+            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
                 <ul>
                     <li><a href="galerie.html">Galerie des oeuvres</a></li>
                     <li><a href="https://ticketmaster.com">Billeterie</a></li>
@@ -36,60 +40,7 @@
 
     <main>
         <section>
-            <div>
-                <img src="public/icones/ligne intro.svg" alt="Ligne Intro" />
-                <h2>CARTIER présente</h2>
-                <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}">
-                    <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
-                        @click="parent = $refs.parent; parent.scrollLeft -= parent.clientWidth">←</button>
-                    <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
-                        @click="parent = $refs.parent; parent.scrollLeft += parent.clientWidth">→</button>
-                    <div class="carrousel_parent-ecrans" x-ref="parent">
-                        <div id="ecran-1" class="carrousel_ecran">
-                            <figure>
-                                <img src="public/img/accueil1.webp" alt="image ecran 1">
-                                <figcaption>Expostion 2022</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-2" class="carrousel_ecran">
-                            <figure>
-                                <img src="public/img/accueil1.webp" alt="image ecran 2">
-                                <figcaption>Expostion 2022</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-3" class="carrousel_ecran">
-                            <figure>
-                                <img src="public/img/accueil1.webp" alt="image ecran 3">
-                                <figcaption>Expostion 2022</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-4" class="carrousel_ecran">
-                            <figure>
-                                <img src="public/img/accueil1.webp" alt="image ecran 4">
-                                <figcaption>Expostion 2022</figcaption>
-                            </figure>
-                        </div>
-                        <div id="ecran-5" class="carrousel_ecran">
-                            <figure>
-                                <img src="public/img/accueil1.webp" alt="image ecran 5">
-                                <figcaption>Expostion 2022</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <ul class="carrousel_liste-liens">
-                    <li><a href="#ecran-1" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-1'}"
-                            @click="hrefCourant = '#ecran-1'">Cartier</a></li>
-                    <li><a href="#ecran-2" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-2'}"
-                            @click="hrefCourant = '#ecran-2'">Exposition</a></li>
-                    <li><a href="#ecran-3" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-3'}"
-                            @click="hrefCourant = '#ecran-3'">Lieu</a></li>
-                    <li><a href="#ecran-4" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-4'}"
-                            @click="hrefCourant = '#ecran-4'">Centre</a></li>
-                    <li><a href="#ecran-5" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-5'}"
-                            @click="hrefCourant = '#ecran-5'">Musée</a></li>
-                </ul>
-            </div>
+            <h1>Architect Art Exposition</h1>
             <p>
                 Cartier revient une fois de plus cette année pour une toute nouvelle exposition. Découvrez ci-contre
                 l’artiste choisit !
@@ -119,7 +70,7 @@
                 </p>
             </div>
             <div>
-                <a href="galerie.html">Galerie des oeuvres</a>
+                <a href="galerie.html">GALERIE DES OEUVRES</a>
             </div>
         </section>
 
@@ -144,17 +95,80 @@
                 <p>
                     Tous les jours de 11h à 20h, sauf le lundi.*
                 </p>
-                <section>
-                    <div x-data="{ estOuvert: false }">
-                        <button @click="estOuvert = ! estOuvert">*Plus d'informations</button>
+                <div x-data="{ estOuvert: false }">
+                    <button @click="estOuvert = ! estOuvert">*Plus d'informations</button>
 
-                        <span x-show="estOuvert" x-transition.duration.40ms>
-                            <caption>
-                                *Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les
-                                mardis). </caption>
-                        </span>
-                    </div>
-                </section>
+                    <span x-show="estOuvert" x-transition.duration.40ms>
+                        <caption>
+                            Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les
+                            mardis). </caption>
+                    </span>
+                </div>
+                <section>
             </div>
-            <div class="section3__img">
-                <img src="public/img/section3.jpg" alt="Image de la section
+            <img src="public/icones/ligne separation.svg" alt="Séparation" />
+            </div>
+            <div>
+                <h1>RÉSERVATIONS</h1>
+                <p>
+                    Voici les tarifs des billets de réservation que vous pouvez vous procurer via la billetterie.
+                </p>
+            </div>
+            <div>
+                <h4>MOINS DE 13 ANS*</h4> <img src="public/icones/ligne intro.svg" alt="Ligne Intro" />
+                <p>Gratuit</p>
+                <h4>PLEIN TARIF</h4> <img src="public/icones/ligne intro.svg" alt="Ligne Intro" />
+                <p>13€</p>
+                <h4>RÉDUCTION 13-25 ANS</h4> <img src="public/icones/ligne intro.svg" alt="Ligne Intro" />
+                <p>11€</p>
+                <h4>TARIF RÉDUIT</h4> <img src="public/icones/ligne intro.svg" alt="Ligne Intro" />
+                <p>7,50€</p>
+                <h4>FONDATION CARTIER PASS</h4> <img src="public/icones/ligne intro.svg" alt="Ligne Intro" />
+                <p>7,50€</p>
+            </div>
+            <div x-data="{ estOuvert: false }">
+                <button @click="estOuvert = ! estOuvert">*Plus d'informations</button>
+
+                <span x-show="estOuvert" x-transition.duration.40ms>
+                    <caption>
+                        *Seulement si laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation
+                        Cartier Pass, Etudiants</caption>
+                </span>
+            </div>
+            <div>
+                <a href="https://ticketmaster.com">BILLETERIE</a>
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="public/icones/ligne separation.svg" alt="Séparation" />
+            </div>
+            <div>
+                <h1>NOUS CONTACTER</h1>
+                <p>
+                    Vous avez des questions sur l’événement ou le site ? Contactez nous via notre formulaire de contact
+                    disponible juste en
+                    dessous.
+                </p>
+            </div>
+            <div>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <div>
+                <h4>Mentions légales</h4>
+                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard.</p>
+                <h4>Contact</h4>
+                <p>Fondation Cartier
+                    261 Bd Raspail
+                    75014 Paris</p>
+                <p>
+                    © 2023 - Axel Saltini
+                </p>
+            </div>
+        </section>
+    </footer>
