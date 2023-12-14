@@ -16,125 +16,137 @@
 <body>
     <header>
         <section>
-        <h1>AAE</h1>
-        <a>
-            <img src="public/icones/logo site.svg" alt="Logo AAE" />
-            <img src="public/icones/hamburger.svg" alt="Menu hamburger" />
-        </a>
-    </section>
-    <section>
-        <nav>
-            <ul>
-                <li><a href="galerie.html">Galerie des oeuvres</a></li>
-                <li><a href="https://ticketmaster.com">Billeterie</a></li>
-                <li><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
-                <li><a href="contact.html">Nous contacter</a></li>
-            </ul>
-        </nav>
-    </section>
+            <h1>AAE</h1>
+            <a>
+                <img src="public/icones/logo site.svg" alt="Logo AAE" />
+                <img src="public/icones/hamburger.svg" alt="Menu hamburger" />
+            </a>
+        </section>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="galerie.html">Galerie des oeuvres</a></li>
+                    <li><a href="https://ticketmaster.com">Billeterie</a></li>
+                    <li><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
 
     <main>
         <section>
             <div>
-            <img src="public/icones/ligne intro.svg" alt="Ligne Intro" />
-                    <h2>CARTIER présente</h2>
-                    <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}">
-                        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
-                            @click="parent = $refs.parent; parent.scrollLeft -= parent.clientWidth">←</button>
-                        <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
-                            @click="parent = $refs.parent; parent.scrollLeft += parent.clientWidth">→</button>
-                        <div class="carrousel_parent-ecrans" x-ref="parent">
-                            <div id="ecran-1" class="carrousel_ecran">
-                                <figure>
-                                    <img src="public/img/accueil1.webp" alt="image ecran 1">
-                                    <figcaption>Expostion 2022</figcaption>
-                                </figure>
-                            </div>
-                            <div id="ecran-2" class="carrousel_ecran">
-                                <figure>
-                                    <img src="public/img/accueil1.webp" alt="image ecran 2">
-                                    <figcaption>Expostion 2022</figcaption>
-                                </figure>
-                            </div>
-                            <div id="ecran-3" class="carrousel_ecran">
-                                <figure>
-                                    <img src="public/img/accueil1.webp" alt="image ecran 3">
-                                    <figcaption>Expostion 2022</figcaption>
-                                </figure>
-                            </div>
-                            <div id="ecran-4" class="carrousel_ecran">
-                                <figure>
-                                    <img src="public/img/accueil1.webp" alt="image ecran 4">
-                                    <figcaption>Expostion 2022</figcaption>
-                                </figure>
-                            </div>
-                            <div id="ecran-5" class="carrousel_ecran">
-                                <figure>
-                                    <img src="public/img/accueil1.webp" alt="image ecran 5">
-                                    <figcaption>Expostion 2022</figcaption>
-                                </figure>
-                            </div>
+                <img src="public/icones/ligne intro.svg" alt="Ligne Intro" />
+                <h2>CARTIER présente</h2>
+                <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}">
+                    <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
+                        @click="parent = $refs.parent; parent.scrollLeft -= parent.clientWidth">←</button>
+                    <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
+                        @click="parent = $refs.parent; parent.scrollLeft += parent.clientWidth">→</button>
+                    <div class="carrousel_parent-ecrans" x-ref="parent">
+                        <div id="ecran-1" class="carrousel_ecran">
+                            <figure>
+                                <img src="public/img/accueil1.webp" alt="image ecran 1">
+                                <figcaption>Expostion 2022</figcaption>
+                            </figure>
                         </div>
+                        <div id="ecran-2" class="carrousel_ecran">
+                            <figure>
+                                <img src="public/img/accueil1.webp" alt="image ecran 2">
+                                <figcaption>Expostion 2022</figcaption>
+                            </figure>
                         </div>
-                        <ul class="carrousel_liste-liens">
-                            <li><a href="#ecran-1" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-1'}"
-                                    @click="hrefCourant = '#ecran-1'">Cartier</a></li>
-                            <li><a href="#ecran-2" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-2'}"
-                                    @click="hrefCourant = '#ecran-2'">Exposition</a></li>
-                            <li><a href="#ecran-3" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-3'}"
-                                    @click="hrefCourant = '#ecran-3'">Lieu</a></li>
-                            <li><a href="#ecran-4" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-4'}"
-                                    @click="hrefCourant = '#ecran-4'">Centre</a></li>
-                            <li><a href="#ecran-5" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-5'}"
-                                    @click="hrefCourant = '#ecran-5'">Musée</a></li>
-                        </ul>
+                        <div id="ecran-3" class="carrousel_ecran">
+                            <figure>
+                                <img src="public/img/accueil1.webp" alt="image ecran 3">
+                                <figcaption>Expostion 2022</figcaption>
+                            </figure>
                         </div>
-                    <p>
-                        Cartier revient une fois de plus cette année pour une toute nouvelle exposition. Découvrez ci-contre l’artiste choisit !
-                    </p>
-            </section>
+                        <div id="ecran-4" class="carrousel_ecran">
+                            <figure>
+                                <img src="public/img/accueil1.webp" alt="image ecran 4">
+                                <figcaption>Expostion 2022</figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-5" class="carrousel_ecran">
+                            <figure>
+                                <img src="public/img/accueil1.webp" alt="image ecran 5">
+                                <figcaption>Expostion 2022</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <ul class="carrousel_liste-liens">
+                    <li><a href="#ecran-1" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-1'}"
+                            @click="hrefCourant = '#ecran-1'">Cartier</a></li>
+                    <li><a href="#ecran-2" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-2'}"
+                            @click="hrefCourant = '#ecran-2'">Exposition</a></li>
+                    <li><a href="#ecran-3" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-3'}"
+                            @click="hrefCourant = '#ecran-3'">Lieu</a></li>
+                    <li><a href="#ecran-4" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-4'}"
+                            @click="hrefCourant = '#ecran-4'">Centre</a></li>
+                    <li><a href="#ecran-5" class="carrousel_lien" :class="{actif:hrefCourant==='#ecran-5'}"
+                            @click="hrefCourant = '#ecran-5'">Musée</a></li>
+                </ul>
+            </div>
+            <p>
+                Cartier revient une fois de plus cette année pour une toute nouvelle exposition. Découvrez ci-contre
+                l’artiste choisit !
+            </p>
+        </section>
 
-            <section>
-                <div>
-                    <img src="public/icones/ligne separation.svg" alt="Séparation" />
-                </div>
-                <div>
-                    <h3>RENZO PIANO</h3>
-                    <img src="public/img/accueil2.webp" alt="accueil2" />
-                    
-                    <p>
-                        Renzo Piano, architecte italien de renommée mondiale, est reconnu pour sa vision avant-gardiste et sa contribution
-                        majeure à l'architecture contemporaine.
-                    </p>
-                    <p>    
-                        Né en 1937, il a laissé une empreinte indélébile dans l'histoire de l'architecture grâce à son approche holistique,
-                        fusionnant fonctionnalité, esthétique et durabilité.
-                    </p>
-                    <p>    
-                        N'hésitez pas à découvrir ses œuvres les plus célèbres juste ici !
-                    </p>
-                </div>
-                <div>
-                    <a href="galerie.html">Galerie des oeuvres</a>
-                </div>
-            </section>
+        <section>
+            <div>
+                <img src="public/icones/ligne separation.svg" alt="Séparation" />
+            </div>
+            <div>
+                <h3>RENZO PIANO</h3>
+                <img src="public/img/accueil2.webp" alt="accueil2" />
 
-            <section>
-                <div>
-                    <img src="public/icones/ligne separation.svg" alt="Séparation" />
-                </div>
-                <div>
-                    <h4>L'EXPOSITION</h4>
-                    <img src="public/img/accueil3.webp" alt="accueil3" />
+                <p>
+                    Renzo Piano, architecte italien de renommée mondiale, est reconnu pour sa vision avant-gardiste et
+                    sa contribution
+                    majeure à l'architecture contemporaine.
+                </p>
+                <p>
+                    Né en 1937, il a laissé une empreinte indélébile dans l'histoire de l'architecture grâce à son
+                    approche holistique,
+                    fusionnant fonctionnalité, esthétique et durabilité.
+                </p>
+                <p>
+                    N'hésitez pas à découvrir ses œuvres les plus célèbres juste ici !
+                </p>
+            </div>
+            <div>
+                <a href="galerie.html">Galerie des oeuvres</a>
+            </div>
+        </section>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-                        voluptatum, quibusdam, quia, quod voluptatem voluptate quos
-                        voluptates quas doloribus quidem voluptatibus. Quisquam voluptatum,
-                        quibusdam, quia, quod voluptatem voluptate quos voluptates quas
-                        doloribus quidem voluptatibus.
-                    </p>
-                </div>
-                <div class="section3__img">
-                    <img src="public/img/section3.jpg" alt="Image de la section
+        <section>
+            <div>
+                <img src="public/icones/ligne separation.svg" alt="Séparation" />
+            </div>
+            <div>
+                <h4>L'EXPOSITION</h4>
+                <img src="public/img/accueil3.webp" alt="accueil3" />
+
+                <img src="public/icones/calendrier.svg" alt="Calendrier" />
+                <img src="public/icones/horaire.svg" alt="Horarie" />
+                <img src="public/icones/lieu.svg" alt="Lieu" />
+
+                <p>
+                    Exposition du 23 avril 2024 au 23 juin 2024
+                </p>
+                <p>
+                    Fondation Cartier, 261 Bd Raspail, 75014 Paris
+                </p>
+                <p>
+                    Tous les jours de 11h à 20h, sauf le lundi.*
+                </p>
+                <caption>
+                    *Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les mardis).
+                </caption>
+            </div>
+            <div class="section3__img">
+                <img src="public/img/section3.jpg" alt="Image de la section
