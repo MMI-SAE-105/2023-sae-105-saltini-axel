@@ -1,3 +1,33 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--mainblue, #172446);
+    display: grid;
+    place-content: center;
+}
+
+.menu__text {
+    list-style: none;
+    color: var(--blanc-criture, #FFF);
+    font-family: Amiko;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.menu__soustexte {
+    list-style: none;
+    color: var(--blanc-criture, #FFF);
+        font-family: Amiko;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+
 .header__menuhamburger {
     position: relative;
     z-index: 10;
@@ -18,7 +48,7 @@
 
 .header__title {
     color: var(--blanc-criture, #FFF);
-    font-family: var(--font-amiko, "Amiko") font-size: 20px;
+    font-family: var(--font-amiko, "Amiko");
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -41,7 +71,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .header__logo h2 {

@@ -25,21 +25,21 @@
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
                 <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
-                <h4>L'EXPOSITION</h4>
-                <li><a href="galerie.html">Galerie des oeuvres</a></li>
-                <li><a href="https://ticketmaster.com">Billeterie</a></li>
-                <li><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
+                <h4 class="menu__text">L'EXPOSITION</h4>
+                <li class="menu__soustexte"><a href="galerie.html">Galerie des oeuvres</a></li>
+                <li class="menu__soustexte"><a href="https://ticketmaster.com">Billeterie</a></li>
+                <li class="menu__soustexte"><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
                 <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
-                <h4>CONTACT</h4>
-                <li><a href="contact.html">Nous contacter</a></li>
-                <p>© 2023 - Axel Saltini</p>
+                <h4 class="menu__text">CONTACT</h4>
+                <li class="menu__soustexte"><a href="contact.html">Nous contacter</a></li>
+                <p class="menu__soustexte">© 2023 - Axel Saltini</p>
             </ul>
         </nav>
         </a>
     </header>
     <main>
         <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
-        <h4>CARTIER présente</h4>
+        <h4 class="main__textintro">CARTIER présente</h4>
         <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}" x-show="!menuIsOpen" x-transition.duration.800ms>
             <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
                 @click="parent = $refs.parent; parent.scrollLeft -= parent.clientWidth">←</button>
