@@ -9,7 +9,7 @@
     place-content: center;
 }
 
-.header__menuBtn {
+.header__menuhamburger {
     position: relative;
     z-index: 10;
 }
@@ -32,4 +32,7 @@
         line-height: normal;
         margin: 30px;
         margin-top: 0;
+}
+.header__logosite {
+    box-sizing: border-box
 }

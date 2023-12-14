@@ -18,8 +18,8 @@
     <header class="header">
         <h2 class="header__title">AAE</h2>
         <a>
-            <a href="index.html"><img src="public/icones/logo site.svg" alt="Logo AAE" /></a>
-            <a aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"><img
+            <center><a href="index.html"><img src="public/icones/logo site.svg" alt="Logo AAE" /></a></center>
+            <a aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuhamburger"><img
                     src="public/icones/hamburger.svg" alt="Menu hamburger" /></a>
             <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
                 <ul>
@@ -39,7 +39,7 @@
     <main>
         <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
         <h4>CARTIER présente</h4>
-        <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}"  x-show="!menuIsOpen" x-transition.duration.800ms>
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}" x-show="!menuIsOpen" x-transition.duration.800ms>
             <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
                 @click="parent = $refs.parent; parent.scrollLeft -= parent.clientWidth">←</button>
             <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
