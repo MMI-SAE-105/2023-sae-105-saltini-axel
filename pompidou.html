@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Architect Art Exposition</title>
+
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="icon" href="public/icones/logo site.svg" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <section>
+            <h2>AAE</h2>
+            <a>
+                <a href="index.html"><img src="public/icones/logo site.svg" alt="Logo AAE" /></a>
+                <a aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"><img
+                        src="public/icones/hamburger.svg" alt="Menu hamburger" /></a>
+                <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+                    <ul>
+                        <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                        <h4>L'EXPOSITION</h4>
+                        <li><a href="galerie.html">Galerie des oeuvres</a></li>
+                        <li><a href="https://ticketmaster.com">Billeterie</a></li>
+                        <li><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
+                        <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                        <h4>CONTACT</h4>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                        <p>© 2023 - Axel Saltini</p>
+                    </ul>
+                </nav>
+            </a>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div>
+            <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+            <h4>CENTRE GEORGES POMPIDOU</h4>
+            <img src="public/img/article1.webp" alt="article1" />
+            <h1>HISTOIRE</h1>
+            <p>
+                Le Centre Georges Pompidou, souvent appelé le Centre Pompidou, a été conçu dans les années 1970 comme un centre culturel
+                majeur à Paris, en France. Son idée initiale remonte au début des années 1960, lorsque le président français Georges
+                Pompidou, désireux de créer un espace dédié à l'art moderne et contemporain, a envisagé un projet audacieux.
+            </p>
+            <p>Le projet a été réalisé grâce à la collaboration d'une équipe d'architectes renommés, notamment Renzo Piano, Richard
+            Rogers, et Gianfranco Franchini. L'objectif était de créer un lieu novateur qui abriterait non seulement des œuvres
+            d'art, mais aussi des espaces de rencontre, des bibliothèques et des zones d'échange culturel.
+        </p>
+        <p>L'architecture du Centre Pompidou est révolutionnaire pour l'époque : les tuyaux, escalators et structures
+        habituellement cachées à l'intérieur des bâtiments sont exposés à l'extérieur, donnant au bâtiment un aspect industriel
+        et coloré, tout en libérant l'intérieur pour offrir des espaces flexibles pour les expositions et les événements.
+    </p>
+    <img src="public/img/article1-2.webp" alt="article1-2" />
+</div>
+            <div>
+                <h1>INFLUENCE DE PIANO</h1>
+                <p>Renzo Piano a eu une influence majeure sur la conception du Centre Georges Pompidou à Paris, un projet emblématique de
+                l'architecture contemporaine. En collaboration avec Richard Rogers, Piano a contribué à repenser radicalement la manière
+                dont un espace culturel pourrait être conçu et vécu.
+            </p>
+            <p>Son approche novatrice de l'architecture, axée sur la transparence, la fonctionnalité et la flexibilité des espaces, a
+            été cruciale dans la conception du bâtiment. Leur idée d'exposer à l'extérieur les éléments structurels tels que les
+            escalators, les tuyaux et les gaines, a permis de libérer l'intérieur du bâtiment, offrant des espaces flexibles et
+            ouverts pour les expositions et les activités culturelles.
+        </p>
+        <p>L'influence de Renzo Piano sur le Centre Pompidou peut être observée dans la vision audacieuse d'un bâtiment qui se
+        présente non seulement comme un lieu d'exposition d'art, mais aussi comme un espace social et dynamique au cœur de
+        Paris. Sa conception a radicalement changé la façon dont les gens interagissent avec l'architecture et a défini de
+        nouveaux standards pour les futurs espaces culturels en combinant fonctionnalité, esthétique et accessibilité.
+    </p>
+    <img src="public/img/article1-3.webp" alt="article1-3" />
+            </div>
+        <div>
+            <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+            <h4>DÉCOUVRIR</h4>
+            <p>Si l’article vous a plu, n’hésitez pas à lire celui sur la Fondation Beyeler, une autre grande œuvre de Piano.</p>
+            <a href="beyeler.html"><img src="public/img/frise2.webp" alt="frise2" /></a>
+            <h3>Fondation Beyeler</h3>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div>
+                <h4>Mentions légales</h4>
+                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard.</p>
+                <h4>Contact</h4>
+                <p>Fondation Cartier
+                    261 Bd Raspail
+                    75014 Paris</p>
+                <p>
+                    © 2023 - Axel Saltini
+                </p>
+            </div>
+        </section>
+    </footer>
