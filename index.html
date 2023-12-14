@@ -144,9 +144,17 @@
                 <p>
                     Tous les jours de 11h à 20h, sauf le lundi.*
                 </p>
-                <caption>
-                    *Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les mardis).
-                </caption>
+                <section>
+                    <div x-data="{ estOuvert: false }">
+                        <button @click="estOuvert = ! estOuvert">*Plus d'informations</button>
+
+                        <span x-show="estOuvert" x-transition.duration.40ms>
+                            <caption>
+                                *Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les
+                                mardis). </caption>
+                        </span>
+                    </div>
+                </section>
             </div>
             <div class="section3__img">
                 <img src="public/img/section3.jpg" alt="Image de la section
