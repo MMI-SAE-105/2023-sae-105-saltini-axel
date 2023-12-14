@@ -1,0 +1,12 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    display: grid;
+    place-content: center;
+    background: var(--mainblue, #172446);
+}
+.menu__text {
+    
+}
