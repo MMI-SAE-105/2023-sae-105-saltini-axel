@@ -118,13 +118,25 @@
                     <p x-show="!menuIsOpen" class="espace"></p>
                     <img src="public/img/article1-3.webp" alt="article1-3" />
                 </div>
-                <div>
-                    <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
-                    <h4>DÉCOUVRIR</h4>
-                    <p>Si l’article vous a plu, n’hésitez pas à lire celui sur la Fondation Beyeler, une autre grande
+                <div class="conteneur2">
+                    <h4 x-show="!menuIsOpen" class="main2__textintro">DÉCOUVRIR</h4>
+                    <div x-show="!menuIsOpen" class="ligneintro"></div>
+                </div>
+                    <p class="main2__para">Si l’article vous a plu, n’hésitez pas à lire celui sur la Fondation Beyeler, une autre grande
                         œuvre de Piano.</p>
-                    <a href="beyeler.html"><img src="public/img/frise2.webp" alt="frise2" /></a>
-                    <h3>Fondation Beyeler</h3>
+                    <div class="conteneur2">
+                        <div x-show="!menuIsOpen" class="position-relative">
+                            <a href="beyeler.html">
+                                <img src="public/img/frise2.webp" alt="frise2" class="image">
+                            </a>
+                            <div x-show="!menuIsOpen" class="position-absolue">
+                                <a class="position-absolue" href="beyeler.html">
+                                    <h3>Fondation Beyeler</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p x-show="!menuIsOpen" class="espace"></p>
                 </div>
         </section>
     </main>
