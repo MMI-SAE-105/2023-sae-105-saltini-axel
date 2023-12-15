@@ -39,13 +39,24 @@
         </nav>
         </a>
     </header>
-    <main>
+    <main class="main">
         <section>
-            <div>
-            <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
-            <h4>CENTRE GEORGES POMPIDOU</h4>
+        <div class="conteneur2">
+            <h4 x-show="!menuIsOpen" class="main2__textintro">CENTRE GEORGES POMPIDOU</h4>
+            <div x-show="!menuIsOpen" class="ligneintro"></div>
+        </div>
             <img src="public/img/article1.webp" alt="article1" />
-            <h1>HISTOIRE</h1>
+            <div>
+                <div class="conteneur2">
+                    <p x-show="!menuIsOpen" class="espace"></p>
+                    <div x-show="!menuIsOpen" class="ligne"></div>
+                </div>
+                <div class="conteneur">
+                    <h1 x-show="!menuIsOpen" class="main2_grostitreligne">L'HISTOIRE</h1>
+                    <div x-show="!menuIsOpen" class="rectangle3">
+                    </div>
+                </div>
+            </div>
             <p>
                 Le Centre Georges Pompidou, souvent appelé le Centre Pompidou, a été conçu dans les années 1970 comme un centre culturel
                 majeur à Paris, en France. Son idée initiale remonte au début des années 1960, lorsque le président français Georges
