@@ -12,20 +12,11 @@
 .menu__text {
     list-style: none;
     color: var(--blanc-criture, #FFF);
-    font-family: Amiko;
+    font-family: var(--font-amiko, "Amiko");
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
-.menu__soustexte {
-    list-style: none;
-    color: var(--blanc-criture, #FFF);
-        font-family: Amiko;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
 }
 
 .header__menuhamburger {
@@ -77,4 +68,12 @@
 .header__logo h2 {
     margin: 0;
     align-self: center;
+}
+.header__text {
+    color: var(--blanc-criture, #FFF);
+        font-family: var(--font-amiko);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
 }

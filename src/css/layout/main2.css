@@ -1,3 +1,12 @@
 .main2__tarifs {
-        background: var(--blue, #4E5A78);
+    background: var(--blue, #4E5A78);
+}
+
+.main2__textintro {
+    color: var(--criture, #000);
+    font-family: var(--font-amiko, "Amiko");
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
