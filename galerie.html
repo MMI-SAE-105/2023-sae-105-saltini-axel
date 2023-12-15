@@ -17,27 +17,28 @@
 <body>
     <header class="header">
         <div class="header__logo">
-            <h2>A.A.E</h2>
+            <h2 class="header__text">A.A.E</h2>
             <center><a href="index.html"><img src="public/icones/logo site.svg" alt="Logo AAE" /></a></center>
             <a aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuhamburger"><img
                     src="public/icones/hamburger.svg" alt="Menu hamburger" /></a>
         </div>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
-                <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                <a class="header__ligne">
+                </a>
                 <h4 class="menu__text">L'EXPOSITION</h4>
-                <li class="menu__soustexte"><a href="galerie.html">Galerie des oeuvres</a></li>
-                <li class="menu__soustexte"><a href="https://ticketmaster.com">Billeterie</a></li>
-                <li class="menu__soustexte"><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
-                <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                <li><a class="menu__text" href="galerie.html">Galerie des oeuvres</a></li>
+                <li><a class="menu__text" href="https://ticketmaster.com">Billeterie</a></li>
+                <li><a class="menu__text" href="renzo.html">Renzo Piano, architecte de génie</a></li>
+                <a class="header__ligne2">
+                </a>
                 <h4 class="menu__text">CONTACT</h4>
-                <li class="menu__soustexte"><a href="contact.html">Nous contacter</a></li>
-                <p class="menu__soustexte">© 2023 - Axel Saltini</p>
+                <li><a class="menu__text" href="contact.html">Nous contacter</a></li>
+                <p class="menu__axel">© 2023 - Axel Saltini</p>
             </ul>
         </nav>
         </a>
     </header>
-
     <main>
         <section>
             <div>
