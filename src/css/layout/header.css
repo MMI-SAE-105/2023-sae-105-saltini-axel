@@ -17,7 +17,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-decoration: none; 
+    text-decoration: none;
+}
+
+.header__txt {
+    list-style: none;
 }
 
 .header__menuhamburger {
@@ -71,27 +75,29 @@
     margin: 0;
     align-self: center;
 }
+
 .header__text {
     color: var(--blanc-criture, #FFF);
-        font-family: var(--font-amiko);
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        text-decoration: none;
-        list-style: none;
+    font-family: var(--font-amiko);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    list-style: none;
 }
 
 .header__ligne {
     position: absolute;
-        left: 19%;
-        top: 37.8%;
-        transform: translate(-70%, -50%);
-        width: 30px;
-        height: 1px;
-        background: var(--blanc-criture, #FFF);
-        
+    left: 19%;
+    top: 37.8%;
+    transform: translate(-70%, -50%);
+    width: 30px;
+    height: 1px;
+    background: var(--blanc-criture, #FFF);
+
 }
+
 .header__ligne2 {
     position: absolute;
     left: 19%;
@@ -102,11 +108,12 @@
     background: var(--blanc-criture, #FFF);
 
 }
+
 .menu__axel {
     color: var(--blanc-criture, #FFF);
-        font-family: Helvetica;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
