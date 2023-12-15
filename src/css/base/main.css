@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: var(--font-sans-serif);
-    font-size: var(--text-md);
+    font-family: var(--);
+    font-size: var(--font-serif);
     line-height: 1.6;
     background-color: var(--gray-white);
 }
