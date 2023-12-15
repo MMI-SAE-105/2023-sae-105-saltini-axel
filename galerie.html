@@ -39,33 +39,50 @@
         </nav>
         </a>
     </header>
-    <main>
+    <main class="main">
         <section>
+            <div class="conteneur2">
+                <h4 x-show="!menuIsOpen" class="main2__textintro">GALERIE DES OEUVRES</h4>
+                <div x-show="!menuIsOpen" class="ligneintro"></div>
+            </div>
+            <p class="main2__para">
+                Renzo Piano a créé de nombreuses œuvres impressionnantes. Découvrez en exclusivité celles qui seront
+                présentées lors de
+                l’exposition à travers cette frise !
+            </p>
             <div>
-                <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
-                <h4>GALERIE DES OEUVRES</h4>
-                <p>
-                    Renzo Piano a créé de nombreuses œuvres impressionnantes. Découvrez en exclusivité celles qui seront
-                    présentées lors de
-                    l’exposition à travers cette frise !
-                </p>
-                <div>
         </section>
         <section>
             <div>
-                <h1>L'histoire des plus grandes oeuvres de Piano</h1>
+                <div class="conteneur">
+                    <h1 x-show="!menuIsOpen" class="main2_grostitreligne">L'Histoire des plus grandes oeuvres de Piano
+                    </h1>
+                    <div x-show="!menuIsOpen" class="rectangle5">
+                        <div class="conteneur">
+                            <div x-show="!menuIsOpen" class="rectangle6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div>
-                <h3>1971</h3>
-                <p> Le Centre Georges Pompidou, situé à Paris, est un monument architectural unique abrite une riche
+                <div class="conteneur">
+                    <div x-show="!menuIsOpen" class="carre"></div>
+                    <h3 x-show="!menuIsOpen" class="main2_grostitreligne">1971</h3>
+                    <p> Le Centre Georges Pompidou, situé à Paris, est un monument architectural unique abrite une
+                    riche
                     collection d'œuvres
                     d'art. </p>
+                    </div>
                 <a href="pompidou.html">
                     <img src="public/img/frise1.webp" alt="frise1" />
                     <a>
+                    </div>
+                </div>
                         <h3>Centre Georges Pompidou</h3>
                         <h3>1982</h3>
-                        <p> La Fondation Beyeler est un véritable joyau artistique, un musée offrant une expérience
+                        <p> La Fondation Beyeler est un véritable joyau artistique, un musée offrant une
+                            expérience
                             intime avec
                             l'art moderne. </p>
                         <a href="beyeler.html">
@@ -73,7 +90,8 @@
                             <a>
                                 <h3>Fondation Beyeler</h3>
                                 <h3>2009</h3>
-                                <p> The Shard, situé à Londres, est une icône architecturale majestueuse ainsi que le
+                                <p> The Shard, situé à Londres, est une icône architecturale majestueuse ainsi
+                                    que le
                                     plus haut
                                     gratte-ciel d'Europe.
                                 </p>
@@ -82,7 +100,8 @@
                                     <a>
                                         <h3>The Shard</h3>
                                         <h3>2009</h3>
-                                        <p> Le Pavillon de Photographie La Coste est un refuge artistique dédié à
+                                        <p> Le Pavillon de Photographie La Coste est un refuge artistique dédié
+                                            à
                                             l'exploration de la
                                             photographie contemporaine.
                                         </p>
@@ -91,7 +110,8 @@
                                             <a>
                                                 <h3>Pavillon La Coste</h3>
                                                 <h3>2010</h3>
-                                                <p> Le Resnick Pavilion du Los Angeles County Museum of Art est une
+                                                <p> Le Resnick Pavilion du Los Angeles County Museum of Art est
+                                                    une
                                                     galerie moderne dédiée à des
                                                     expositions et collections.
                                                 </p>
@@ -109,8 +129,10 @@
                                                             <a>
                                                                 <h3>Centre Centro Botin</h3>
                                                                 <h3>2015</h3>
-                                                                <p> Le Whitney Museum of American Art est un musée
-                                                                    iconique de New York, avec un cadre architectural
+                                                                <p> Le Whitney Museum of American Art est un
+                                                                    musée
+                                                                    iconique de New York, avec un cadre
+                                                                    architectural
                                                                     saisissant.
                                                                 </p>
                                                                 <a href="whitney.html">
@@ -118,8 +140,10 @@
                                                                     <a>
                                                                         <h3>Whitney Museum</h3>
                                                                         <h3>2020</h3>
-                                                                        <p> Le Pont San Girorgio est une magnifique
-                                                                            passerelle située à Venise, offrant une vue
+                                                                        <p> Le Pont San Girorgio est une
+                                                                            magnifique
+                                                                            passerelle située à Venise, offrant
+                                                                            une vue
                                                                             spectaculaire sur
                                                                             ses canaux.
                                                                         </p>
@@ -132,22 +156,22 @@
             </div>
         </section>
     </main>
-<footer class="footer">
-    <section>
-        <div>
-            <h4 class="footer__titre">Mentions légales</h4>
-            <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de
-                Montbéliard.</p>
-            <h4 class="footer__titre">Contact</h4>
-            <p class="footer__text">Fondation Cartier</p>
-            <p class="footer__text">
-                261 Bd Raspail</p>
-            <p class="footer__text">
-                75014 Paris</p>
-            <p x-show="!menuIsOpen" class="espace"></p>
-            <p class="footer__text">
-                © 2023 - Axel Saltini
-            </p>
-        </div>
-    </section>
-</footer>
+    <footer class="footer">
+        <section>
+            <div>
+                <h4 class="footer__titre">Mentions légales</h4>
+                <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de
+                    Montbéliard.</p>
+                <h4 class="footer__titre">Contact</h4>
+                <p class="footer__text">Fondation Cartier</p>
+                <p class="footer__text">
+                    261 Bd Raspail</p>
+                <p class="footer__text">
+                    75014 Paris</p>
+                <p x-show="!menuIsOpen" class="espace"></p>
+                <p class="footer__text">
+                    © 2023 - Axel Saltini
+                </p>
+            </div>
+        </section>
+    </footer>

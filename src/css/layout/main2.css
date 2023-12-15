@@ -142,24 +142,25 @@
 
 .main2__tariftext {
     color: var(--blanc-criture, #FFF);
-        font-family: Helvetica;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .main2__contact {
     color: var(--blanc-criture, #FFF);
-    
+
 }
+
 .main2__contact2 {
     color: var(--criture, #000);
-        font-family: var(--font-amiko, "Amiko");
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+    font-family: var(--font-amiko, "Amiko");
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 input[type="text"],
@@ -186,26 +187,26 @@ button {
 
 .rectangle3 {
     position: absolute;
-        top: 50%;
-        /* Position verticale du rectangle */
-        left: 17%;
-        /* Position horizontale du rectangle */
-        transform: translate(-35%, 40%);
-        /* Centre le rectangle */
-        width: 140px;
-        /* Largeur du rectangle */
-        height: 25px;
-        /* Hauteur du rectangle */
-        background: var(--bloc-fond-titre, rgba(7, 209, 253, 0.31));
-        /* Couleur du rectangle avec transparence */
-        /* Autres styles pour le rectangle */
+    top: 50%;
+    /* Position verticale du rectangle */
+    left: 15%;
+    /* Position horizontale du rectangle */
+    transform: translate(-35%, 40%);
+    /* Centre le rectangle */
+    width: 140px;
+    /* Largeur du rectangle */
+    height: 25px;
+    /* Hauteur du rectangle */
+    background: var(--bloc-fond-titre, rgba(7, 209, 253, 0.31));
+    /* Couleur du rectangle avec transparence */
+    /* Autres styles pour le rectangle */
 }
 
 .rectangle4 {
     position: absolute;
     top: 50%;
     /* Position verticale du rectangle */
-    left: 27%;
+    left: 26%;
     /* Position horizontale du rectangle */
     transform: translate(-35%, 40%);
     /* Centre le rectangle */
@@ -216,4 +217,45 @@ button {
     background: var(--bloc-fond-titre, rgba(7, 209, 253, 0.31));
     /* Couleur du rectangle avec transparence */
     /* Autres styles pour le rectangle */
+}
+
+.rectangle5 {
+    position: absolute;
+    top: 30%;
+    /* Position verticale du rectangle */
+    left: 32%;
+    /* Position horizontale du rectangle */
+    transform: translate(-35%, 40%);
+    /* Centre le rectangle */
+    width: 320px;
+    /* Largeur du rectangle */
+    height: 25px;
+    /* Hauteur du rectangle */
+    background: var(--bloc-fond-titre, rgba(7, 209, 253, 0.31));
+    /* Couleur du rectangle avec transparence */
+    /* Autres styles pour le rectangle */
+}
+
+.rectangle6 {
+    position: absolute;
+    top: 0%;
+    /* Position verticale du rectangle */
+    left: 53%;
+    /* Position horizontale du rectangle */
+    transform: translate(-85%, 120%);
+    /* Centre le rectangle */
+    width: 200px;
+    /* Largeur du rectangle */
+    height: 25px;
+    /* Hauteur du rectangle */
+    background: var(--bloc-fond-titre, rgba(7, 209, 253, 0.31));
+    /* Couleur du rectangle avec transparence */
+    /* Autres styles pour le rectangle */
+}
+
+.carre {
+    width: 250px;
+        height: 250px;
+        flex-shrink: 0;
+        background: #4E5A78;
 }
