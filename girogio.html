@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Architect Art Exposition</title>
+
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="icon" href="public/icones/logo site.svg" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <h2>A.A.E</h2>
+            <center><a href="index.html"><img src="public/icones/logo site.svg" alt="Logo AAE" /></a></center>
+            <a aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuhamburger"><img
+                    src="public/icones/hamburger.svg" alt="Menu hamburger" /></a>
+        </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                <h4 class="menu__text">L'EXPOSITION</h4>
+                <li class="menu__soustexte"><a href="galerie.html">Galerie des oeuvres</a></li>
+                <li class="menu__soustexte"><a href="https://ticketmaster.com">Billeterie</a></li>
+                <li class="menu__soustexte"><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
+                <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                <h4 class="menu__text">CONTACT</h4>
+                <li class="menu__soustexte"><a href="contact.html">Nous contacter</a></li>
+                <p class="menu__soustexte">© 2023 - Axel Saltini</p>
+            </ul>
+        </nav>
+        </a>
+    </header>
+    <main>
+        <section>
+            <div>
+                <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                <h4>PONT SAN GIRORGIO</h4>
+                <img src="public/img/article8.webp" alt="article8" />
+                <h1>HISTOIRE</h1>
+                <p>
+                    La Fondation Beyeler, située à Riehen, près de Bâle en Suisse, est un remarquable musée d'art moderne et
+                    contemporain.
+                    Son histoire remonte à 1982, lorsque le collectionneur d'art Ernst Beyeler et sa femme Hildy ont fondé
+                    la galerie
+                    Beyeler. Leur passion pour l'art a rapidement évolué vers la création d'un musée, désireux de partager
+                    leur collection
+                    avec le public.
+                </p>
+                <p>En 1997, la Fondation Beyeler a ouvert ses portes au sein d'un bâtiment conçu par l'architecte Renzo
+                    Piano. Le musée,
+                    entouré d'un superbe jardin paysager, offre un espace lumineux et spacieux pour exposer les œuvres
+                    d'art. La conception
+                    architecturale de Piano met l'accent sur la lumière naturelle et crée une atmosphère où les œuvres d'art
+                    dialoguent
+                    harmonieusement avec l'environnement.
+                </p>
+                <p>La collection de la Fondation Beyeler présente un large éventail d'œuvres d'art moderne et contemporain,
+                    comprenant des
+                    pièces de grands maîtres tels que Picasso, Monet, Rothko, et bien d'autres. En plus des expositions
+                    permanentes, le
+                    musée organise régulièrement des expositions temporaires mettant en lumière des artistes contemporains
+                    émergents ou des
+                    thèmes artistiques spécifiques
+                </p>
+                <img src="public/img/article8-2.webp" alt="article8-2" />
+            </div>
+            <div>
+                <h1>INFLUENCE DE PIANO</h1>
+                <p>Renzo Piano a joué un rôle déterminant dans la conception architecturale de la Fondation Beyeler. Son
+                    approche sensible
+                    et respectueuse de l'environnement a grandement influencé le design du musée, créant un espace qui
+                    s'harmonise
+                    parfaitement avec les œuvres d'art et la nature environnante.
+                </p>
+                <p>L'une des influences majeures de Renzo Piano sur la Fondation Beyeler réside dans son utilisation experte
+                    de la lumière
+                    naturelle. Le bâtiment qu'il a conçu est caractérisé par de grandes surfaces vitrées qui permettent à la
+                    lumière
+                    naturelle de pénétrer dans les galeries, offrant ainsi un éclairage idéal pour apprécier les œuvres
+                    d'art. Cette lumière
+                    changeante tout au long de la journée crée une atmosphère dynamique et met en valeur les différentes
+                    textures et
+                    couleurs des œuvres exposées.
+                </p>
+                <p>De plus, la conception de Renzo Piano a intégré le paysage environnant dans l'expérience muséale. Le
+                    musée est entouré
+                    d'un magnifique jardin paysager, et l'architecture du bâtiment permet aux visiteurs de profiter de vues
+                    panoramiques sur
+                    la nature environnante tout en déambulant à travers les galeries.
+                </p>
+            </div>
+            <div>
+                <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                <h4>DÉCOUVRIR</h4>
+                <p>Si l’article vous a plu, n’hésitez pas à lire celui sur le centre Georges Pompidou, une autre grande œuvre de
+                    Piano.</p>
+                <a href="pompidou.html"><img src="public/img/frise1.webp" alt="frise1" /></a>
+                <h3>Centre Georges Pompidou</h3>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div>
+                <h4>Mentions légales</h4>
+                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard.</p>
+                <h4>Contact</h4>
+                <p>Fondation Cartier
+                    261 Bd Raspail
+                    75014 Paris</p>
+                <p>
+                    © 2023 - Axel Saltini
+                </p>
+            </div>
+        </section>
+    </footer>

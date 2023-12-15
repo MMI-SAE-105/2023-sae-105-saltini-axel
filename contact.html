@@ -15,22 +15,27 @@
 </head>
 
 <body>
-    <header>
-        <section>
-            <h2>AAE</h2>
-            <a href="index.html"><img src="public/icones/logo site.svg" alt="Logo AAE" /></a>
-            <a aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"><img
+    <header class="header">
+        <div class="header__logo">
+            <h2>A.A.E</h2>
+            <center><a href="index.html"><img src="public/icones/logo site.svg" alt="Logo AAE" /></a></center>
+            <a aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuhamburger"><img
                     src="public/icones/hamburger.svg" alt="Menu hamburger" /></a>
-            <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-                <ul>
-                    <li><a href="galerie.html">Galerie des oeuvres</a></li>
-                    <li><a href="https://ticketmaster.com">Billeterie</a></li>
-                    <li><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
-                    <li><a href="contact.html">Nous contacter</a></li>
-                </ul>
-            </nav>
-            </a>
-        </section>
+        </div>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                <h4 class="menu__text">L'EXPOSITION</h4>
+                <li class="menu__soustexte"><a href="galerie.html">Galerie des oeuvres</a></li>
+                <li class="menu__soustexte"><a href="https://ticketmaster.com">Billeterie</a></li>
+                <li class="menu__soustexte"><a href="renzo.html">Renzo Piano, architecte de génie</a></li>
+                <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                <h4 class="menu__text">CONTACT</h4>
+                <li class="menu__soustexte"><a href="contact.html">Nous contacter</a></li>
+                <p class="menu__soustexte">© 2023 - Axel Saltini</p>
+            </ul>
+        </nav>
+        </a>
     </header>
     <main>
         <section>
