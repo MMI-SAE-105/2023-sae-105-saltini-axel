@@ -9,4 +9,96 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-left: 40px;
+}
+
+.main2_minitext {
+    color: var(--gris-criture, #7A7171);
+    font-family: var(--font-helevetica, "helvetica neue");
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main2_grostitre {
+    color: var(--criture, #000);
+    font-family: var(--font-amiko, "Amiko");
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.main2_grostitreligne {
+    color: var(--criture, #000);
+    font-family: var(--font-amiko, "Amiko");
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.main2__para {
+    color: var(--criture, #000);
+    font-family: var(--font-helevetica, "helvetica neue");
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.conteneur {
+    position: relative;
+    /* Autres styles pour le conteneur si nécessaire */
+}
+
+.rectangle {
+    position: absolute;
+    top: 50%;
+    /* Position verticale du rectangle */
+    left: 25%;
+    /* Position horizontale du rectangle */
+    transform: translate(-50%, 40%);
+    /* Centre le rectangle */
+    width: 172px;
+    /* Largeur du rectangle */
+    height: 25px;
+    /* Hauteur du rectangle */
+    background: var(--bloc-fond-titre, rgba(7, 209, 253, 0.31));
+    /* Couleur du rectangle avec transparence */
+    /* Autres styles pour le rectangle */
+}
+
+.conteneur2 {
+    position: relative;
+    /* Autres styles pour le conteneur si nécessaire */
+}
+
+.ligne {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 1px;
+    background: var(--contour, #000);
+}
+
+.ligneintro {
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    transform: translate(-70%, -50%);
+    width: 30px;
+    height: 1px;
+    background: var(--contour, #000);
+}
+
+.espace {
+    margin-bottom: 35px;
 }

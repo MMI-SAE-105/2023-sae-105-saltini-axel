@@ -38,8 +38,10 @@
         </a>
     </header>
     <main>
-        <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+        <div class="conteneur2">
         <h4 class="main2__textintro">CARTIER présente</h4>
+            <div class="ligneintro"></div>
+        </div>
         <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}" x-show="!menuIsOpen" x-transition.duration.800ms>
             <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
                 @click="parent = $refs.parent; parent.scrollLeft -= parent.clientWidth">←</button>
@@ -49,7 +51,7 @@
                 <div id="ecran-1" class="carrousel_ecran">
                     <figure>
                         <img src="public/img/accueil1.webp" alt="image ecran 1">
-                        <figcaption>Expostion 2022</figcaption>
+                        <figcaption class="main2__minitext">Expostion 2022</figcaption>
                     </figure>
                 </div>
                 <div id="ecran-2" class="carrousel_ecran">
@@ -78,31 +80,35 @@
                 </div>
             </div>
         </div>
-        <h1>Architect Art Exposition</h1>
-        <p>
+        <h1 class="main2_grostitre">Architect Art Exposition</h1>
+        <p class="main2__para">
             Cartier revient une fois de plus cette année pour une toute nouvelle exposition. Découvrez ci-contre
             l’artiste choisit !
         </p>
 
         <section>
-            <div>
-                <img src="public/icones/ligne separation.svg" alt="Séparation" />
+            <div class="conteneur2">
+                <p class="espace"></p>
+            <div class="ligne"></div>
             </div>
             <div>
-                <h1>RENZO PIANO</h1>
+                <div class="conteneur">
+                <h1 class="main2_grostitreligne">RENZO PIANO</h1>
+                <div class="rectangle"></div>
+                </div>
                 <img src="public/img/accueil2.webp" alt="accueil2" />
 
-                <p>
+                <p class="main2__para">
                     Renzo Piano, architecte italien de renommée mondiale, est reconnu pour sa vision avant-gardiste et
                     sa contribution
                     majeure à l'architecture contemporaine.
                 </p>
-                <p>
+                <p class="main2__para">
                     Né en 1937, il a laissé une empreinte indélébile dans l'histoire de l'architecture grâce à son
                     approche holistique,
                     fusionnant fonctionnalité, esthétique et durabilité.
                 </p>
-                <p>
+                <p class="main2__para">
                     N'hésitez pas à découvrir ses œuvres les plus célèbres juste ici !
                 </p>
             </div>
