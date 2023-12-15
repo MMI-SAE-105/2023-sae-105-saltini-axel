@@ -17,6 +17,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    
 }
 
 .header__menuhamburger {
@@ -73,6 +74,35 @@
     color: var(--blanc-criture, #FFF);
         font-family: var(--font-amiko);
         font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+
+.header__ligne {
+    position: absolute;
+        left: 22%;
+        top: 37.5%;
+        transform: translate(-70%, -50%);
+        width: 30px;
+        height: 1px;
+        background: var(--blanc-criture, #FFF);
+        
+}
+.header__ligne2 {
+    position: absolute;
+    left: 22%;
+    top: 52.9%;
+    transform: translate(-70%, -50%);
+    width: 30px;
+    height: 1px;
+    background: var(--blanc-criture, #FFF);
+
+}
+.menu__axel {
+    color: var(--blanc-criture, #FFF);
+        font-family: Helvetica;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;

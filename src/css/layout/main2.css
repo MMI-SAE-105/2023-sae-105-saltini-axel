@@ -28,6 +28,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    
 }
 
 .main2_grostitreligne {
@@ -96,9 +97,27 @@
     transform: translate(-70%, -50%);
     width: 30px;
     height: 1px;
-    background: var(--contour, #000);
+    background: var(--contour, #000); 
 }
 
 .espace {
     margin-bottom: 35px;
+}
+
+.main2__btn {
+    color: #000;
+        font-family: var(--font-amiko, "Amiko");
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border: 1px solid var(--contour, #000);
+            background: rgba(217, 217, 217, 0.00);
+            transform: translate(0%, 0%);
+}
+
+.main2__logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

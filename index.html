@@ -24,23 +24,25 @@
         </div>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
-                <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                <a class="header__ligne">
+                </a>
                 <h4 class="menu__text">L'EXPOSITION</h4>
                 <li><a href="galerie.html" class="menu__texte">Galerie des oeuvres</a></li>
                 <li><a href="https://ticketmaster.com" class="menu__texte">Billeterie</a></li>
                 <li><a href="renzo.html" class="menu__texte">Renzo Piano, architecte de génie</a></li>
-                <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
+                <a class="header__ligne2">
+                </a>
                 <h4 class="menu__text">CONTACT</h4>
                 <li><a href="contact.html" class="menu__texte">Nous contacter</a></li>
-                <p class="menu__texte">© 2023 - Axel Saltini</p>
+                <p class="menu__axel">© 2023 - Axel Saltini</p>
             </ul>
         </nav>
         </a>
     </header>
     <main>
         <div class="conteneur2">
-        <h4 class="main2__textintro">CARTIER présente</h4>
-            <div class="ligneintro"></div>
+            <h4 x-show="!menuIsOpen" class="main2__textintro">CARTIER présente</h4>
+            <div x-show="!menuIsOpen" class="ligneintro"></div>
         </div>
         <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}" x-show="!menuIsOpen" x-transition.duration.800ms>
             <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
@@ -88,46 +90,58 @@
 
         <section>
             <div class="conteneur2">
-                <p class="espace"></p>
-            <div class="ligne"></div>
+                <p x-show="!menuIsOpen" class="espace"></p>
+                <div x-show="!menuIsOpen" class="ligne"></div>
             </div>
             <div>
                 <div class="conteneur">
-                <h1 class="main2_grostitreligne">RENZO PIANO</h1>
-                <div class="rectangle"></div>
+                    <h1 x-show="!menuIsOpen" class="main2_grostitreligne">RENZO PIANO</h1>
+                    <div x-show="!menuIsOpen" class="rectangle">
+                    </div>
                 </div>
-                <img src="public/img/accueil2.webp" alt="accueil2" />
-
-                <p class="main2__para">
-                    Renzo Piano, architecte italien de renommée mondiale, est reconnu pour sa vision avant-gardiste et
-                    sa contribution
-                    majeure à l'architecture contemporaine.
-                </p>
-                <p class="main2__para">
-                    Né en 1937, il a laissé une empreinte indélébile dans l'histoire de l'architecture grâce à son
-                    approche holistique,
-                    fusionnant fonctionnalité, esthétique et durabilité.
-                </p>
-                <p class="main2__para">
-                    N'hésitez pas à découvrir ses œuvres les plus célèbres juste ici !
-                </p>
             </div>
-            <div>
-                <a href="galerie.html">GALERIE DES OEUVRES</a>
+            <img src="public/img/accueil2.webp" alt="accueil2" />
+
+            <p class="main2__para">
+                Renzo Piano, architecte italien de renommée mondiale, est reconnu pour sa vision avant-gardiste
+                et
+                sa contribution
+                majeure à l'architecture contemporaine.
+            </p>
+            <p class="main2__para">
+                Né en 1937, il a laissé une empreinte indélébile dans l'histoire de l'architecture grâce à son
+                approche holistique,
+                fusionnant fonctionnalité, esthétique et durabilité.
+            </p>
+            <p class="main2__para">
+                N'hésitez pas à découvrir ses œuvres les plus célèbres juste ici !
+            </p>
+            </div>
+            <div class="main2__btn">
+                <center><a href="galerie.html" x-show="!menuIsOpen">GALERIE DES OEUVRES</a></center>
             </div>
         </section>
 
         <section>
-            <div>
-                <img src="public/icones/ligne separation.svg" alt="Séparation" />
+            <div class="conteneur2">
+                <p x-show="!menuIsOpen" class="espace"></p>
+                <div x-show="!menuIsOpen" class="ligne"></div>
             </div>
             <div>
-                <h1>L'EXPOSITION</h1>
+                <div>
+                    <div class="conteneur">
+                        <h1 x-show="!menuIsOpen" class="main2_grostitreligne">L'EXPOSITION</h1>
+                        <div x-show="!menuIsOpen" class="rectangle">
+                        </div>
+                    </div>
+                </div>
                 <img src="public/img/accueil3.webp" alt="accueil3" />
 
-                <img src="public/icones/calendrier.svg" alt="Calendrier" />
+                <div class="main2__logos">
+                <img class="main2__logos" src="public/icones/calendrier.svg" alt="Calendrier" />
                 <img src="public/icones/horaire.svg" alt="Horarie" />
                 <img src="public/icones/lieu.svg" alt="Lieu" />
+                </div>
 
                 <p>
                     Exposition du 23 avril 2024 au 23 juin 2024
@@ -188,7 +202,7 @@
                 <h1>NOUS CONTACTER</h1>
                 <p>
                     Vous avez des questions sur l’événement ou le site ? Contactez nous via notre formulaire de contact
-                    disponible juste en
+                    dispo nible juste en
                     dessous.
                 </p>
             </div>
@@ -197,19 +211,3 @@
             </div>
         </section>
     </main>
-
-    <footer>
-        <section>
-            <div>
-                <h4>Mentions légales</h4>
-                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard.</p>
-                <h4>Contact</h4>
-                <p>Fondation Cartier
-                    261 Bd Raspail
-                    75014 Paris</p>
-                <p>
-                    © 2023 - Axel Saltini
-                </p>
-            </div>
-        </section>
-    </footer>
