@@ -17,7 +17,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
+    text-decoration: none; 
 }
 
 .header__menuhamburger {
@@ -36,6 +36,7 @@
 .header {
     position: relative;
     background: var(--mainblue, #172446);
+    padding: 10px;
 }
 
 .header__title {
@@ -77,12 +78,14 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        text-decoration: none;
+        list-style: none;
 }
 
 .header__ligne {
     position: absolute;
-        left: 22%;
-        top: 37.5%;
+        left: 19%;
+        top: 37.8%;
         transform: translate(-70%, -50%);
         width: 30px;
         height: 1px;
@@ -91,8 +94,8 @@
 }
 .header__ligne2 {
     position: absolute;
-    left: 22%;
-    top: 52.9%;
+    left: 19%;
+    top: 53.3%;
     transform: translate(-70%, -50%);
     width: 30px;
     height: 1px;

@@ -27,13 +27,13 @@
                 <a class="header__ligne">
                 </a>
                 <h4 class="menu__text">L'EXPOSITION</h4>
-                <li><a href="galerie.html" class="menu__texte">Galerie des oeuvres</a></li>
-                <li><a href="https://ticketmaster.com" class="menu__texte">Billeterie</a></li>
-                <li><a href="renzo.html" class="menu__texte">Renzo Piano, architecte de génie</a></li>
+                <li><a class="menu__text" href="galerie.html">Galerie des oeuvres</a></li>
+                <li><a class="menu__text" href="https://ticketmaster.com">Billeterie</a></li>
+                <li><a class="menu__text" href="renzo.html">Renzo Piano, architecte de génie</a></li>
                 <a class="header__ligne2">
                 </a>
                 <h4 class="menu__text">CONTACT</h4>
-                <li><a href="contact.html" class="menu__texte">Nous contacter</a></li>
+                <li><a class="menu__text" href="contact.html">Nous contacter</a></li>
                 <p class="menu__axel">© 2023 - Axel Saltini</p>
             </ul>
         </nav>
@@ -139,10 +139,10 @@
                 </div>
                 <img src="public/img/accueil3.webp" alt="accueil3" />
 
-                <div class="main2__logos">
-                <img src="public/icones/calendrier.svg" alt="Calendrier" />
-                <img src="public/icones/horaire.svg" alt="Horarie" />
-                <img src="public/icones/lieu.svg" alt="Lieu" />
+                <div>
+                    <img class="main2__logos" src="public/icones/calendrier.svg" alt="Calendrier" />
+                    <img class="main2__logos" src="public/icones/horaire.svg" alt="Horarie" />
+                    <img class="main2__logos" src="public/icones/lieu.svg" alt="Lieu" />
                 </div>
 
                 <p class="main2__para">
@@ -182,15 +182,15 @@
                 </p>
             </div>
             <div class="main2__tarifs">
-                <h4 class="main2__tariftext">MOINS DE 13 ANS*</h4> <img src="public/icones/ligne intro.svg" alt="Ligne Intro" />
+                <h4 class="main2__tariftext">MOINS DE 13 ANS*</h4>
                 <p class="main2__tariftext">Gratuit</p>
-                <h4 class="main2__tariftext">PLEIN TARIF</h4> <img src="public/icones/ligne intro.svg" alt="Ligne Intro" />
+                <h4 class="main2__tariftext">PLEIN TARIF</h4>
                 <p class="main2__tariftext">13€</p>
-                <h4 class="main2__tariftext">RÉDUCTION 13-25 ANS</h4> <img src="public/icones/ligne intro.svg" alt="Ligne Intro" />
+                <h4 class="main2__tariftext">RÉDUCTION 13-25 ANS</h4>
                 <p class="main2__tariftext">11€</p>
-                <h4 class="main2__tariftext">TARIF RÉDUIT</h4> <img src="public/icones/ligne intro.svg" alt="Ligne Intro" />
+                <h4 class="main2__tariftext">TARIF RÉDUIT</h4>
                 <p class="main2__tariftext">7,50€</p>
-                <h4 class="main2__tariftext">FONDATION CARTIER PASS</h4> <img src="public/icones/ligne intro.svg" alt="Ligne Intro" />
+                <h4 class="main2__tariftext">FONDATION CARTIER PASS</h4>
                 <p class="main2__tariftext">7,50€</p>
             </div>
             <div x-data="{ estOuvert: false }">
@@ -237,12 +237,15 @@
         <section>
             <div>
                 <h4 class="footer__titre">Mentions légales</h4>
-                <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard.</p>
+                <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de
+                    Montbéliard.</p>
                 <h4 class="footer__titre">Contact</h4>
                 <p class="footer__text">Fondation Cartier</p>
-                    <p class="footer__text">
-                    261 Bd Raspail</p><p class="footer__text">
+                <p class="footer__text">
+                    261 Bd Raspail</p>
+                <p class="footer__text">
                     75014 Paris</p>
+                    <p x-show="!menuIsOpen" class="espace"></p>
                 <p class="footer__text">
                     © 2023 - Axel Saltini
                 </p>
