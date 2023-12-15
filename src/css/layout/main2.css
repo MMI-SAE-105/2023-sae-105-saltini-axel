@@ -131,6 +131,8 @@
     border: 1px solid var(--contour, #000);
     background: rgba(217, 217, 217, 0.00);
     transform: translate(0%, 0%);
+    text-decoration: none;
+    padding: 10px;
 }
 
 .main2__logo {
