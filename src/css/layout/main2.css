@@ -183,3 +183,37 @@ button {
 .main {
     padding: 10px;
 }
+
+.rectangle3 {
+    position: absolute;
+        top: 50%;
+        /* Position verticale du rectangle */
+        left: 17%;
+        /* Position horizontale du rectangle */
+        transform: translate(-35%, 40%);
+        /* Centre le rectangle */
+        width: 140px;
+        /* Largeur du rectangle */
+        height: 25px;
+        /* Hauteur du rectangle */
+        background: var(--bloc-fond-titre, rgba(7, 209, 253, 0.31));
+        /* Couleur du rectangle avec transparence */
+        /* Autres styles pour le rectangle */
+}
+
+.rectangle4 {
+    position: absolute;
+    top: 50%;
+    /* Position verticale du rectangle */
+    left: 27%;
+    /* Position horizontale du rectangle */
+    transform: translate(-35%, 40%);
+    /* Centre le rectangle */
+    width: 255px;
+    /* Largeur du rectangle */
+    height: 25px;
+    /* Hauteur du rectangle */
+    background: var(--bloc-fond-titre, rgba(7, 209, 253, 0.31));
+    /* Couleur du rectangle avec transparence */
+    /* Autres styles pour le rectangle */
+}
