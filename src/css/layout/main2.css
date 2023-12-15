@@ -148,3 +148,37 @@
         font-weight: 400;
         line-height: normal;
 }
+
+.main2__contact {
+    color: var(--blanc-criture, #FFF);
+    
+}
+.main2__contact2 {
+    color: var(--criture, #000);
+        font-family: var(--font-amiko, "Amiko");
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.main {
+    padding: 10px;
+}

@@ -39,12 +39,13 @@
         </nav>
         </a>
     </header>
-    <main>
+    <main class="main">
         <section>
-            <div>
-                <img src="public/icones/ligne intro.svg" alt="Ligne intro" />
-                <h4>NOUS CONTACTER</h4>
-                <p>
+            <div class="conteneur2">
+                <h4 x-show="!menuIsOpen" class="main2__textintro">NOUS CONTACTER</h4>
+                <div x-show="!menuIsOpen" class="ligneintro"></div>
+            </div>
+                <p class="main2__para">
                     Ici, vous pouvez nous envoyer vos questions sur l’Architect Art Exposition, nous ferons de notre
                     mieux pour vous
                     répondre rapidement.
@@ -55,19 +56,24 @@
         <section>
             <form>
                 <div>
-                    <label for="nom">Nom</label>
+                    <label class="main2__contact2" for="nom">Nom</label>
                     <input type="text" name="nom" id="nom" />
                 </div>
                 <div>
-                    <label for="email">E-mail</label>
+                    <label class="main2__contact2" for="email">E-mail</label>
                     <input type="text" name="email" id="email" />
                 </div>
                 <div>
-                    <label for="message">Message</label>
+                    <label class="main2__contact2" for="message">Message</label>
                     <textarea id="message" name="message" rows="5"></textarea>
                 </div>
+                <form action="404.html">
                 <div>
-                    <a href="index.html"><button type="submit">Envoyer</button></a>
+                    <button type="submit">Envoyer</button>
+                </div>
+                </form>
+                <div>
+                    <p x-show="!menuIsOpen" class="espace"></p>
                 </div>
             </form>
         </section>

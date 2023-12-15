@@ -39,7 +39,7 @@
         </nav>
         </a>
     </header>
-    <main>
+    <main class="main">
         <div class="conteneur2">
             <h4 x-show="!menuIsOpen" class="main2__textintro">CARTIER présente</h4>
             <div x-show="!menuIsOpen" class="ligneintro"></div>
@@ -192,6 +192,9 @@
                 <p class="main2__tariftext">7,50€</p>
                 <h4 class="main2__tariftext">FONDATION CARTIER PASS</h4>
                 <p class="main2__tariftext">7,50€</p>
+            </div>
+            <div>
+                <p x-show="!menuIsOpen" class="espace"></p>
             </div>
             <div x-data="{ estOuvert: false }">
                 <button @click="estOuvert = ! estOuvert">*Plus d'informations</button>
