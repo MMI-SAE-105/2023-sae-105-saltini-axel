@@ -117,8 +117,8 @@
                 N'hésitez pas à découvrir ses œuvres les plus célèbres juste ici !
             </p>
             </div>
-            <div class="main2__btn">
-                <center><a href="galerie.html" x-show="!menuIsOpen">GALERIE DES OEUVRES</a></center>
+            <div>
+                <center><a class="main2__btn" href="galerie.html" x-show="!menuIsOpen">GALERIE DES OEUVRES</a></center>
             </div>
         </section>
 
@@ -138,36 +138,44 @@
                 <img src="public/img/accueil3.webp" alt="accueil3" />
 
                 <div class="main2__logos">
-                <img class="main2__logos" src="public/icones/calendrier.svg" alt="Calendrier" />
+                <img src="public/icones/calendrier.svg" alt="Calendrier" />
                 <img src="public/icones/horaire.svg" alt="Horarie" />
                 <img src="public/icones/lieu.svg" alt="Lieu" />
                 </div>
 
-                <p>
+                <p class="main2__para">
                     Exposition du 23 avril 2024 au 23 juin 2024
                 </p>
-                <p>
+                <p class="main2__para">
                     Fondation Cartier, 261 Bd Raspail, 75014 Paris
                 </p>
-                <p>
+                <p class="main2__para">
                     Tous les jours de 11h à 20h, sauf le lundi.*
                 </p>
                 <div x-data="{ estOuvert: false }">
                     <button @click="estOuvert = ! estOuvert">*Plus d'informations</button>
 
                     <span x-show="estOuvert" x-transition.duration.40ms>
-                        <caption>
+                        <caption class="main2__minitext">
                             Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les
                             mardis). </caption>
                     </span>
                 </div>
                 <section>
             </div>
-            <img src="public/icones/ligne separation.svg" alt="Séparation" />
+            <div class="conteneur2">
+                <p x-show="!menuIsOpen" class="espace"></p>
+                <div x-show="!menuIsOpen" class="ligne"></div>
             </div>
             <div>
-                <h1>RÉSERVATIONS</h1>
-                <p>
+                <div>
+                    <div class="conteneur">
+                        <h1 x-show="!menuIsOpen" class="main2_grostitreligne">RÉSERVATION</h1>
+                        <div x-show="!menuIsOpen" class="rectangle">
+                        </div>
+                    </div>
+                </div>
+                <p class="main2__para">
                     Voici les tarifs des billets de réservation que vous pouvez vous procurer via la billetterie.
                 </p>
             </div>
@@ -191,23 +199,32 @@
                         *Seulement si laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation
                         Cartier Pass, Etudiants</caption>
                 </span>
-                <a href="404.html">BILLETERIE</a>
+            </div>
+            <div>
+                <center><a class="main2__btn" href="404.html">BILLETERIE</a></center>
             </div>
         </section>
         <section>
-            <div>
-                <img src="public/icones/ligne separation.svg" alt="Séparation" />
+            <div class="conteneur2">
+                <p x-show="!menuIsOpen" class="espace"></p>
+                <div x-show="!menuIsOpen" class="ligne"></div>
             </div>
             <div>
-                <h1>NOUS CONTACTER</h1>
-                <p>
+                <div>
+                    <div class="conteneur">
+                        <h1 x-show="!menuIsOpen" class="main2_grostitreligne">NOUS CONTACTER</h1>
+                        <div x-show="!menuIsOpen" class="rectangle2">
+                        </div>
+                    </div>
+                </div>
+                <p class="main2__para">
                     Vous avez des questions sur l’événement ou le site ? Contactez nous via notre formulaire de contact
                     dispo nible juste en
                     dessous.
                 </p>
             </div>
             <div>
-                <a href="contact.html">CONTACT</a>
+                <center><a class="main2__btn" href="contact.html">CONTACT</a></center>
             </div>
         </section>
     </main>

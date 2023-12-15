@@ -28,7 +28,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    
+
 }
 
 .main2_grostitreligne {
@@ -75,6 +75,23 @@
     /* Autres styles pour le rectangle */
 }
 
+.rectangle2 {
+    position: absolute;
+    top: 50%;
+    /* Position verticale du rectangle */
+    left: 25%;
+    /* Position horizontale du rectangle */
+    transform: translate(-35%, 40%);
+    /* Centre le rectangle */
+    width: 240px;
+    /* Largeur du rectangle */
+    height: 25px;
+    /* Hauteur du rectangle */
+    background: var(--bloc-fond-titre, rgba(7, 209, 253, 0.31));
+    /* Couleur du rectangle avec transparence */
+    /* Autres styles pour le rectangle */
+}
+
 .conteneur2 {
     position: relative;
     /* Autres styles pour le conteneur si nécessaire */
@@ -97,7 +114,7 @@
     transform: translate(-70%, -50%);
     width: 30px;
     height: 1px;
-    background: var(--contour, #000); 
+    background: var(--contour, #000);
 }
 
 .espace {
@@ -106,14 +123,14 @@
 
 .main2__btn {
     color: #000;
-        font-family: var(--font-amiko, "Amiko");
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        border: 1px solid var(--contour, #000);
-            background: rgba(217, 217, 217, 0.00);
-            transform: translate(0%, 0%);
+    font-family: var(--font-amiko, "Amiko");
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: 1px solid var(--contour, #000);
+    background: rgba(217, 217, 217, 0.00);
+    transform: translate(0%, 0%);
 }
 
 .main2__logo {
