@@ -100,7 +100,7 @@
 
 .ligne {
     position: absolute;
-    left: 50%;
+    left: 62.5%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 250px;
@@ -254,8 +254,80 @@ button {
 }
 
 .carre {
-    width: 250px;
-        height: 250px;
-        flex-shrink: 0;
-        background: #4E5A78;
+    width: 200px;
+    /* Largeur du carré */
+    height: 200px;
+    /* Hauteur du carré */
+    background-color: #4E5A78;
+    /* Couleur de fond du carré */
+    display: absolute;
+    /* Utilisation de flexbox pour centrer le contenu */
+    justify-content: left;
+    /* Centrer horizontalement */
+    align-items: left;
+    /* Centrer verticalement */
+    padding: 20px;
+    margin-left: 85px;
+}
+
+.carre p {
+    text-align: left;
+    /* Alignement du texte au centre */
+    margin: 10px;
+    /* Suppression des marges par défaut du paragraphe */
+}
+.main2__titregalerie {
+    margin: 0;
+    color: var(--blanc-criture, #FFF);
+        font-family: Amiko;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+.main2__paragalerie {
+    margin: 0;  
+    color: var(--blanc-criture, #FFF);
+        font-family: Helvetica;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+
+.conteneur2 {
+    position: relative;
+    /* Position relative pour permettre le positionnement absolu à l'intérieur */
+    width: 300px;
+    /* Ajustez la largeur au besoin */
+    /* Ajoutez d'autres styles au besoin */
+}
+
+.position-relative {
+    position: relative;
+    /* Position relative pour le conteneur parent */
+    margin-left: 70px;
+}
+
+.position-absolue {
+    position: absolute;
+    /* Position absolue pour le titre */
+    top: 50%;
+    /* Positionnement vertical au centre */
+    left: 50%;
+    /* Positionnement horizontal au centre */
+    transform: translate(-50%, -50%);
+    /* Centrage parfait */
+    color: var(--blanc-criture, #FFF);
+    /* Couleur du texte */
+    font-family: var(--font-amiko, "Amiko");
+    /* Ajoutez d'autres styles au besoin */
+    text-decoration: none;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    /* Ajustez la largeur au besoin */
+    display: block;
 }
